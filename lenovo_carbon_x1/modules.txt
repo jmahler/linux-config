@@ -15,6 +15,10 @@ cpufreq_conservative
 cpufreq_powersave
 cpufreq_stats
 cpufreq_userspace
+crc16
+crc32_pclmul
+crc32c_intel
+crc_t10dif
 crct10dif_common
 crct10dif_generic
 crct10dif_pclmul
