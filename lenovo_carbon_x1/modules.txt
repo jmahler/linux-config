@@ -23,6 +23,7 @@ crct10dif_common
 crct10dif_generic
 crct10dif_pclmul
 cryptd
+dm_mod
 drm
 drm_kms_helper
 evdev
