@@ -18,6 +18,7 @@ cpufreq_userspace
 crc16
 crc32_pclmul
 crc32c_intel
+crc_ccitt
 crc_t10dif
 crct10dif_common
 crct10dif_generic
@@ -77,6 +78,10 @@ ppdev
 processor
 psmouse
 rfkill
+rt2800lib
+rt2800usb
+rt2x00lib
+rt2x00usb
 scsi_mod
 sd_mod
 sdhci
