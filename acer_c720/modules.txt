@@ -9,6 +9,7 @@ ath9k_hw
 auth_rpcgss
 autofs4
 battery
+binfmt_misc
 bluetooth
 bnep
 btusb
@@ -38,7 +39,9 @@ fat
 fscache
 fuse
 ghash_clmulni_intel
+grace
 i2c_algo_bit
+i2c_core
 i2c_designware_core
 i2c_designware_pci
 i2c_designware_platform
@@ -49,6 +52,7 @@ iTCO_wdt
 intel_powerclamp
 intel_rapl
 jbd2
+joydev
 kvm
 kvm_intel
 libahci
