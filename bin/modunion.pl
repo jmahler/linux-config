@@ -74,13 +74,13 @@ sub sorted_union {
 			last;
 		}
 
-		if ($a < $b) {
+		if ($a lt $b) {
 			push @union, $a;
 			$idx_a++;
-		} elsif ($a > $b) {
+		} elsif ($a gt $b) {
 			push @union, $b;
 			$idx_b++;
-		} elsif ($a == $b) {
+		} elsif ($a eq $b) {
 			push @union, $a;
 			$idx_a++;
 			$idx_b++;
