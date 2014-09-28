@@ -3,7 +3,7 @@ use strict;
 
 die "usage: $0 modules.txt\n" unless (@ARGV);
 
-my $MODULES_FILE = "modules.txt";
+my $MODULES_FILE = shift @ARGV;
 
 sub get_cur_modules {
 
@@ -33,14 +33,20 @@ sub get_prev_modules {
 		or die "Unable to open '$file': $!";
 
 	my @prev_mods = <FILE>;
+
+	for (my $i = 0; $i < @prev_mods; $i++) {
+		chomp($prev_mods[$i]);
+	}
+
+	return @prev_mods;
 }
 
 sub sorted_union {
 	my $_a = shift;
 	my $_b = shift;
 
-	my @a = @$_a;
-	my @b = @$_b;
+	my @as = @$_a;
+	my @bs = @$_b;
 
 	my @union;
 
@@ -48,8 +54,25 @@ sub sorted_union {
 	my $idx_b = 0;
 
 	while (1) {
-		my $a = $a[$idx_a];
-		my $b = $b[$idx_b];
+		my $a = $as[$idx_a];
+		my $b = $bs[$idx_b];
+
+		if ($idx_a == @as and $idx_b == @bs) {
+			# both empty
+			last;
+		} elsif ($idx_a == @as) {
+			# a empty, use rest of b
+			for (; $idx_b < @bs; $idx_b++) {
+				push @union, $bs[$idx_b];
+			}
+			last;
+		} elsif ($idx_b == @bs) {
+			# b empty, use rest of a
+			for (; $idx_a < @as; $idx_a++) {
+				push @union, $as[$idx_a];
+			}
+			last;
+		}
 
 		if ($a < $b) {
 			push @union, $a;
@@ -61,20 +84,6 @@ sub sorted_union {
 			push @union, $a;
 			$idx_a++;
 			$idx_b++;
-		}
-
-		if ($idx_a == @a and $idx_b == @b) {
-			last;
-		} elsif ($idx_a == @a) {
-			for (; $idx_b < @b; $idx_b++) {
-				push @union, $b[$idx_b];	
-			}
-			last;
-		} elsif ($idx_b == @b) {
-			for (; $idx_a < @a; $idx_a++) {
-				push @union, $a[$idx_a];	
-			}
-			last;
 		}
 	}
 
