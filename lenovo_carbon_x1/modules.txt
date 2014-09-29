@@ -4,6 +4,7 @@ aes_x86_64
 aesni_intel
 ahci
 arc4
+asix
 auth_rpcgss
 autofs4
 battery
@@ -35,6 +36,7 @@ fuse
 gf128mul
 ghash_clmulni_intel
 glue_helper
+grace
 i2c_algo_bit
 i2c_core
 i2c_i801
@@ -52,6 +54,7 @@ kvm
 kvm_intel
 libahci
 libata
+libphy
 lockd
 loop
 lp
@@ -62,6 +65,7 @@ mbcache
 mei
 mei_me
 mfd_core
+mii
 mmc_block
 mmc_core
 nfs
@@ -108,6 +112,7 @@ tpm
 tpm_tis
 usb_common
 usbcore
+usbnet
 vfat
 video
 wmi
