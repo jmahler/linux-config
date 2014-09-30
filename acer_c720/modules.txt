@@ -40,6 +40,8 @@ fscache
 fuse
 ghash_clmulni_intel
 grace
+hid
+hid_generic
 i2c_algo_bit
 i2c_core
 i2c_designware_core
@@ -99,6 +101,7 @@ tpm_tis
 usb_common
 usb_storage
 usbcore
+usbhid
 uvcvideo
 v4l2_common
 vfat
