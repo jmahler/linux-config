@@ -904,6 +904,7 @@ CONFIG_NET_EMATCH_STACK=32
 # CONFIG_NET_EMATCH_U32 is not set
 # CONFIG_NET_EMATCH_META is not set
 # CONFIG_NET_EMATCH_TEXT is not set
+# CONFIG_NET_EMATCH_CANID is not set
 CONFIG_NET_CLS_ACT=y
 # CONFIG_NET_ACT_POLICE is not set
 # CONFIG_NET_ACT_GACT is not set
@@ -945,7 +946,40 @@ CONFIG_HAMRADIO=y
 # Packet Radio protocols
 #
 # CONFIG_AX25 is not set
-# CONFIG_CAN is not set
+CONFIG_CAN=m
+CONFIG_CAN_RAW=m
+CONFIG_CAN_BCM=m
+CONFIG_CAN_GW=m
+
+#
+# CAN Device Drivers
+#
+CONFIG_CAN_VCAN=m
+CONFIG_CAN_SLCAN=m
+CONFIG_CAN_DEV=m
+CONFIG_CAN_CALC_BITTIMING=y
+# CONFIG_CAN_LEDS is not set
+# CONFIG_CAN_SJA1000 is not set
+# CONFIG_CAN_C_CAN is not set
+# CONFIG_CAN_M_CAN is not set
+# CONFIG_CAN_CC770 is not set
+
+#
+# CAN SPI interfaces
+#
+# CONFIG_CAN_MCP251X is not set
+
+#
+# CAN USB interfaces
+#
+# CONFIG_CAN_EMS_USB is not set
+# CONFIG_CAN_ESD_USB2 is not set
+# CONFIG_CAN_GS_USB is not set
+# CONFIG_CAN_KVASER_USB is not set
+# CONFIG_CAN_PEAK_USB is not set
+# CONFIG_CAN_8DEV_USB is not set
+# CONFIG_CAN_SOFTING is not set
+# CONFIG_CAN_DEBUG_DEVICES is not set
 # CONFIG_IRDA is not set
 # CONFIG_BT is not set
 # CONFIG_AF_RXRPC is not set
