@@ -10,6 +10,8 @@ autofs4
 battery
 binfmt_misc
 button
+can
+can_raw
 cfg80211
 coretemp
 cpufreq_conservative
@@ -32,6 +34,7 @@ evdev
 ext4
 fat
 fscache
+ftdi_sio
 fuse
 gf128mul
 ghash_clmulni_intel
@@ -113,6 +116,8 @@ tpm_tis
 usb_common
 usbcore
 usbnet
+usbserial
+vcan
 vfat
 video
 wmi
