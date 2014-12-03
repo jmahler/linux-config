@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.18.0-rc6 Kernel Configuration
+# Linux/x86 3.18.0-rc7 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -613,6 +613,7 @@ CONFIG_ACPI_APEI_MEMORY_FAILURE=y
 # CONFIG_ACPI_APEI_EINJ is not set
 # CONFIG_ACPI_APEI_ERST_DEBUG is not set
 CONFIG_ACPI_EXTLOG=y
+# CONFIG_PMIC_OPREGION is not set
 CONFIG_SFI=y
 
 #
