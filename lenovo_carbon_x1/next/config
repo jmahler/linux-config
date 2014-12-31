@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.19.0-rc1 Kernel Configuration
+# Linux/x86 3.19.0-rc2 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1073,6 +1073,7 @@ CONFIG_BT_BREDR=y
 # CONFIG_BT_BNEP is not set
 # CONFIG_BT_HIDP is not set
 CONFIG_BT_LE=y
+# CONFIG_BT_SELFTEST is not set
 
 #
 # Bluetooth device drivers
@@ -1747,6 +1748,7 @@ CONFIG_WLAN=y
 # CONFIG_BRCMFMAC is not set
 # CONFIG_HOSTAP is not set
 # CONFIG_IPW2100 is not set
+# CONFIG_IPW2200 is not set
 CONFIG_IWLWIFI=m
 CONFIG_IWLWIFI_LEDS=y
 CONFIG_IWLDVM=m
@@ -1857,6 +1859,7 @@ CONFIG_MOUSE_PS2_TRACKPOINT=y
 CONFIG_MOUSE_PS2_ELANTECH=y
 CONFIG_MOUSE_PS2_SENTELIC=y
 # CONFIG_MOUSE_PS2_TOUCHKIT is not set
+# CONFIG_MOUSE_PS2_FOCALTECH is not set
 # CONFIG_MOUSE_SERIAL is not set
 # CONFIG_MOUSE_APPLETOUCH is not set
 # CONFIG_MOUSE_BCM5974 is not set
