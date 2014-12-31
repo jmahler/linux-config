@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.19.0-rc1 Kernel Configuration
+# Linux/x86 3.19.0-rc2 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1076,6 +1076,7 @@ CONFIG_BT_BNEP_MC_FILTER=y
 CONFIG_BT_BNEP_PROTO_FILTER=y
 # CONFIG_BT_HIDP is not set
 CONFIG_BT_LE=y
+# CONFIG_BT_SELFTEST is not set
 
 #
 # Bluetooth device drivers
@@ -1763,6 +1764,7 @@ CONFIG_ATH9K_PCOEM=y
 # CONFIG_BRCMFMAC is not set
 # CONFIG_HOSTAP is not set
 # CONFIG_IPW2100 is not set
+# CONFIG_IPW2200 is not set
 # CONFIG_IWLWIFI is not set
 # CONFIG_IWL4965 is not set
 # CONFIG_IWL3945 is not set
