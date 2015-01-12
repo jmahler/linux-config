@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.19.0-rc3 Kernel Configuration
+# Linux/x86 3.19.0-rc4 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1938,6 +1938,7 @@ CONFIG_INPUT_TOUCHSCREEN=y
 CONFIG_INPUT_MISC=y
 # CONFIG_INPUT_AD714X is not set
 # CONFIG_INPUT_BMA150 is not set
+# CONFIG_INPUT_E3X0_BUTTON is not set
 CONFIG_INPUT_PCSPKR=m
 # CONFIG_INPUT_MMA8450 is not set
 # CONFIG_INPUT_MPU3050 is not set
@@ -2830,6 +2831,7 @@ CONFIG_SND_USB=y
 # HID support
 #
 CONFIG_HID=m
+# CONFIG_HID_BATTERY_STRENGTH is not set
 CONFIG_HIDRAW=y
 # CONFIG_UHID is not set
 CONFIG_HID_GENERIC=m
