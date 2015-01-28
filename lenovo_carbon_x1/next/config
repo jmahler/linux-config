@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 3.19.0-rc5 Kernel Configuration
+# Linux/x86 3.19.0-rc6 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -425,6 +425,7 @@ CONFIG_SCHED_MC=y
 # CONFIG_PREEMPT_NONE is not set
 CONFIG_PREEMPT_VOLUNTARY=y
 # CONFIG_PREEMPT is not set
+CONFIG_X86_UP_APIC_MSI=y
 CONFIG_X86_LOCAL_APIC=y
 CONFIG_X86_IO_APIC=y
 CONFIG_X86_REROUTE_FOR_BROKEN_BOOT_IRQS=y
@@ -996,7 +997,6 @@ CONFIG_NET_CLS_ACT=y
 # CONFIG_NET_ACT_CSUM is not set
 # CONFIG_NET_ACT_VLAN is not set
 # CONFIG_NET_ACT_BPF is not set
-# CONFIG_NET_ACT_CONNMARK is not set
 CONFIG_NET_SCH_FIFO=y
 CONFIG_DCB=y
 # CONFIG_DNS_RESOLVER is not set
@@ -2578,7 +2578,6 @@ CONFIG_DRM_LOAD_EDID_FIRMWARE=y
 # CONFIG_DRM_I2C_CH7006 is not set
 # CONFIG_DRM_I2C_SIL164 is not set
 # CONFIG_DRM_I2C_NXP_TDA998X is not set
-# CONFIG_DRM_PTN3460 is not set
 # CONFIG_DRM_TDFX is not set
 # CONFIG_DRM_R128 is not set
 # CONFIG_DRM_RADEON is not set
@@ -3383,6 +3382,7 @@ CONFIG_STAGING=y
 # CONFIG_RTS5208 is not set
 # CONFIG_VT6655 is not set
 # CONFIG_VT6656 is not set
+# CONFIG_FB_SM7XX is not set
 # CONFIG_FB_XGI is not set
 # CONFIG_FT1000 is not set
 
@@ -3461,11 +3461,6 @@ CONFIG_ACPI_WMI=m
 CONFIG_INTEL_SMARTCONNECT=m
 # CONFIG_PVPANIC is not set
 # CONFIG_CHROME_PLATFORMS is not set
-
-#
-# SOC (System On Chip) specific Drivers
-#
-# CONFIG_SOC_TI is not set
 CONFIG_CLKDEV_LOOKUP=y
 CONFIG_HAVE_CLK_PREPARE=y
 CONFIG_COMMON_CLK=y
@@ -3492,6 +3487,7 @@ CONFIG_CLKBLD_I8253=y
 # CONFIG_SH_TIMER_MTU2 is not set
 # CONFIG_SH_TIMER_TMU is not set
 # CONFIG_EM_TIMER_STI is not set
+# CONFIG_ASM9260_TIMER is not set
 # CONFIG_MAILBOX is not set
 CONFIG_IOMMU_API=y
 CONFIG_IOMMU_SUPPORT=y
@@ -3517,6 +3513,7 @@ CONFIG_IRQ_REMAP=y
 #
 # SOC (System On Chip) specific Drivers
 #
+# CONFIG_SOC_TI is not set
 # CONFIG_PM_DEVFREQ is not set
 # CONFIG_EXTCON is not set
 # CONFIG_MEMORY is not set
