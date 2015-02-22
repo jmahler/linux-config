@@ -1074,6 +1074,7 @@ CONFIG_BT_BREDR=y
 # CONFIG_BT_HIDP is not set
 CONFIG_BT_LE=y
 # CONFIG_BT_SELFTEST is not set
+CONFIG_BT_DEBUGFS=y
 
 #
 # Bluetooth device drivers
@@ -3307,6 +3308,7 @@ CONFIG_RTC_DRV_CMOS=y
 # CONFIG_RTC_DRV_DS1286 is not set
 # CONFIG_RTC_DRV_DS1511 is not set
 # CONFIG_RTC_DRV_DS1553 is not set
+# CONFIG_RTC_DRV_DS1685_FAMILY is not set
 # CONFIG_RTC_DRV_DS1742 is not set
 # CONFIG_RTC_DRV_DS2404 is not set
 # CONFIG_RTC_DRV_STK17TA8 is not set
