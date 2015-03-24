@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.0.0-rc4 Kernel Configuration
+# Linux/x86 4.0.0-rc5 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -2836,6 +2836,7 @@ CONFIG_SND_HDA_I915=y
 # CONFIG_SND_HDA_CODEC_SI3054 is not set
 CONFIG_SND_HDA_GENERIC=m
 CONFIG_SND_HDA_POWER_SAVE_DEFAULT=0
+CONFIG_SND_HDA_CORE=m
 CONFIG_SND_SPI=y
 CONFIG_SND_USB=y
 # CONFIG_SND_USB_AUDIO is not set
