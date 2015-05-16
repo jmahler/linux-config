@@ -31,7 +31,14 @@ git am *.patch || exit 1
 
 make oldconfig || exit 1
 
-cp .config ~/linux-config/acer_c720/config-next || exit 1
+if [ -e ~/linux-config/current/config-next ]; then
+	cp .config ~/linux-config/current/config-next || exit 1
+else
+	echo "The 'current' directory does not exist, skipping."
+	echo "Perhaps a link needs to be added?"
+	echo "  cd ~/linux-config"
+	echo "  ln -s your-config-name current"
+fi
 
 make -j2 || exit 1
 
