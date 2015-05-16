@@ -27,7 +27,9 @@ esac
 
 git reset --hard master || exit 1
 
-git am *.patch || exit 1
+if ls *.patch 1>/dev/null 2>&1; then
+	git am *.patch || exit 1
+fi
 
 make oldconfig || exit 1
 
