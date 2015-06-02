@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.1.0-rc5 Kernel Configuration
+# Linux/x86 4.1.0-rc6 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1515,6 +1515,7 @@ CONFIG_NET_FC=y
 # CONFIG_NETPOLL is not set
 # CONFIG_NET_POLL_CONTROLLER is not set
 # CONFIG_TUN is not set
+# CONFIG_TUN_VNET_CROSS_LE is not set
 # CONFIG_VETH is not set
 # CONFIG_NLMON is not set
 # CONFIG_ARCNET is not set
@@ -1523,6 +1524,7 @@ CONFIG_NET_FC=y
 # CAIF transport drivers
 #
 # CONFIG_VHOST_NET is not set
+# CONFIG_VHOST_CROSS_ENDIAN_LEGACY is not set
 
 #
 # Distributed Switch Architecture drivers
@@ -3456,7 +3458,6 @@ CONFIG_X86_PLATFORM_DEVICES=y
 # CONFIG_DELL_WMI is not set
 # CONFIG_DELL_WMI_AIO is not set
 # CONFIG_DELL_SMO8800 is not set
-# CONFIG_DELL_RBTN is not set
 # CONFIG_FUJITSU_LAPTOP is not set
 # CONFIG_FUJITSU_TABLET is not set
 # CONFIG_AMILO_RFKILL is not set
