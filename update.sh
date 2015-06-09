@@ -31,7 +31,7 @@ if ls *.patch 1>/dev/null 2>&1; then
 	git am *.patch || exit 1
 fi
 
-make oldconfig || exit 1
+yes "" | make oldconfig || exit 1
 
 if [ -e ~/linux-config/current/config-next ]; then
 	cp .config ~/linux-config/current/config-next || exit 1
