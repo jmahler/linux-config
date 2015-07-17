@@ -7,6 +7,15 @@
 
 set -x
 
+if ls *.patch 1>/dev/null 2>&1; then
+	echo "Please remove any local patches before updating."
+	exit 1
+fi
+
+git checkout jm || exit 1
+
+git format-patch master || exit 1
+
 git checkout master || exit 1
 
 git fetch origin || exit 1
@@ -14,16 +23,6 @@ git fetch origin || exit 1
 git reset --hard origin/master || exit 1
 
 git checkout jm || exit 1
-
-read -r -p "reset 'jm' to master and destroy local changes? [y/N] " response
-case $response in
-	[yY])
-		;;
-	*)
-		echo "stop"
-		exit;
-		;;
-esac
 
 git reset --hard master || exit 1
 
