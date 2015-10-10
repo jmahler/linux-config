@@ -18,7 +18,7 @@ git format-patch master || exit 1
 
 git checkout master || exit 1
 
-git fetch origin || exit 1
+git fetch origin master || exit 1
 
 git reset --hard origin/master || exit 1
 
