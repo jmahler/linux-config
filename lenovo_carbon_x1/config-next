@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.3.0-rc4 Kernel Configuration
+# Linux/x86 4.3.0-rc5 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1217,7 +1217,6 @@ CONFIG_BLK_DEV_LOOP_MIN_COUNT=8
 # CONFIG_BLK_DEV_CRYPTOLOOP is not set
 # CONFIG_BLK_DEV_DRBD is not set
 # CONFIG_BLK_DEV_NBD is not set
-# CONFIG_BLK_DEV_NVME is not set
 # CONFIG_BLK_DEV_SKD is not set
 # CONFIG_BLK_DEV_SX8 is not set
 # CONFIG_BLK_DEV_RAM is not set
@@ -1228,6 +1227,7 @@ CONFIG_BLK_DEV_LOOP_MIN_COUNT=8
 # CONFIG_BLK_DEV_HD is not set
 # CONFIG_BLK_DEV_RBD is not set
 # CONFIG_BLK_DEV_RSXX is not set
+# CONFIG_BLK_DEV_NVME is not set
 
 #
 # Misc devices
@@ -1803,9 +1803,9 @@ CONFIG_WLAN=y
 # CONFIG_PRISM54 is not set
 # CONFIG_USB_ZD1201 is not set
 # CONFIG_USB_NET_RNDIS_WLAN is not set
+# CONFIG_ADM8211 is not set
 # CONFIG_RTL8180 is not set
 # CONFIG_RTL8187 is not set
-# CONFIG_ADM8211 is not set
 # CONFIG_MAC80211_HWSIM is not set
 # CONFIG_MWL8K is not set
 # CONFIG_ATH_CARDS is not set
@@ -2497,7 +2497,7 @@ CONFIG_SENSORS_CORETEMP=m
 # CONFIG_SENSORS_ATK0110 is not set
 CONFIG_THERMAL=y
 CONFIG_THERMAL_HWMON=y
-# CONFIG_THERMAL_WRITABLE_TRIPS is not set
+CONFIG_THERMAL_WRITABLE_TRIPS=y
 CONFIG_THERMAL_DEFAULT_GOV_STEP_WISE=y
 # CONFIG_THERMAL_DEFAULT_GOV_FAIR_SHARE is not set
 # CONFIG_THERMAL_DEFAULT_GOV_USER_SPACE is not set
@@ -3628,7 +3628,6 @@ CONFIG_IRQ_REMAP=y
 #
 # SOC (System On Chip) specific Drivers
 #
-# CONFIG_ROCKCHIP_PM_DOMAINS is not set
 # CONFIG_SUNXI_RSB is not set
 # CONFIG_SUNXI_SRAM is not set
 # CONFIG_SOC_TI is not set
@@ -3671,6 +3670,11 @@ CONFIG_RAS=y
 # CONFIG_INTEL_TH is not set
 
 #
+# FPGA Configuration Support
+#
+# CONFIG_FPGA is not set
+
+#
 # Firmware Drivers
 #
 # CONFIG_EDD is not set
@@ -3690,6 +3694,7 @@ CONFIG_ISCSI_IBFT_FIND=y
 # CONFIG_EFI_VARS is not set
 CONFIG_EFI_ESRT=y
 CONFIG_EFI_RUNTIME_MAP=y
+# CONFIG_EFI_FAKE_MEMMAP is not set
 CONFIG_EFI_RUNTIME_WRAPPERS=y
 CONFIG_UEFI_CPER=y
 
