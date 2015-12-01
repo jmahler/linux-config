@@ -4,6 +4,8 @@
 
 set -x
 
+yes "" | make oldconfig || exit 1
+
 make -j2 || exit 1
 
 sudo make modules_install install || exit 1
