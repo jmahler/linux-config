@@ -2,12 +2,12 @@
 
 # Update this local repository with upstream.
 
-set -x
-
 if ls *.patch 1>/dev/null 2>&1; then
-	echo "Please remove any local patches before updating."
+	echo "I found some local patches, please remove them before updating."
 	exit 1
 fi
+
+set -x
 
 # switch to our working branch
 git checkout jm || exit 1
