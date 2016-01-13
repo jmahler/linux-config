@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.4.0-rc8 Kernel Configuration
+# Linux/x86 4.4.0 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -3419,6 +3419,7 @@ CONFIG_X86_PLATFORM_DEVICES=y
 # CONFIG_SENSORS_HDAPS is not set
 # CONFIG_INTEL_MENLOW is not set
 # CONFIG_EEEPC_LAPTOP is not set
+# CONFIG_ASUS_WIRELESS is not set
 # CONFIG_ACPI_WMI is not set
 # CONFIG_TOPSTAR_LAPTOP is not set
 # CONFIG_TOSHIBA_BT_RFKILL is not set
@@ -4094,7 +4095,6 @@ CONFIG_DEBUG_BUGVERBOSE=y
 # CONFIG_PROVE_RCU is not set
 # CONFIG_SPARSE_RCU_POINTER is not set
 # CONFIG_TORTURE_TEST is not set
-# CONFIG_RCU_PERF_TEST is not set
 # CONFIG_RCU_TORTURE_TEST is not set
 CONFIG_RCU_CPU_STALL_TIMEOUT=21
 # CONFIG_RCU_TRACE is not set
