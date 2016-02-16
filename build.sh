@@ -10,8 +10,15 @@ make -j2 || exit 1
 
 sudo make modules_install install || exit 1
 
-RELEASE=$(make kernelrelease)
-HOST=$(hostname)
-SUBJ="$HOST: kernel $RELEASE built"
+if [ ! -x "$(which mail)" ]; then
+	echo "mail command not found.";
+	echo "Do you need to install mailutils?"
+	echo "  apt-get install mailutils"
+else
+	RELEASE=$(make kernelrelease)
+	HOST=$(hostname)
+	SUBJ="$HOST: kernel $RELEASE built"
+	BODY="Build of kernel $RELEASE on $HOST complete."
 
-mail -s "$SUBJ" "$EMAIL" < /dev/null
+	echo "$BODY" | mail -s "$SUBJ" "$EMAIL"
+fi
