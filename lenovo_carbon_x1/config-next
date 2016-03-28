@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.5.0 Kernel Configuration
+# Linux/x86 4.6.0-rc1 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -3521,7 +3521,6 @@ CONFIG_STAGING=y
 # Speakup console speech
 #
 # CONFIG_SPEAKUP is not set
-# CONFIG_TOUCHSCREEN_SYNAPTICS_I2C_RMI4 is not set
 CONFIG_STAGING_MEDIA=y
 
 #
@@ -3529,7 +3528,6 @@ CONFIG_STAGING_MEDIA=y
 #
 # CONFIG_LTE_GDM724X is not set
 # CONFIG_LNET is not set
-# CONFIG_LUSTRE_FS is not set
 # CONFIG_DGNC is not set
 # CONFIG_GS_FPGABOOT is not set
 # CONFIG_CRYPTO_SKEIN is not set
